@@ -44,7 +44,7 @@ def main():
 
 
     # Plot results
-    plt.plot(x,h,'k-'')
+    plt.plot(x,h,'k-')
     plt.xlabel('Distance from divide [m]')
     plt.ylabel('Elevation [m]')
     plt.title('Predicted hillslope geometry: Diffusion model')
