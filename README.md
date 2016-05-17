@@ -71,7 +71,7 @@ For this section we will apply our model equation to a real landscape, the weste
     ![Topographic profile](Images/sierras_profile.png)<br/>
     *Figure 2. Topographic profile across an interfluve between 2 streams draining into the Yuba River, Sierra Nevada mountains, California, USA.*
 
-4. Lastly, you will want to plot the observed topographic profile along with the model prediction to try and fit the observation by varying the uplift rate until you get a similar profile. Add a line in the script to plot the observed data using the `plot()` function. Be sure to use a different line color or pattern so that it is clear which line is the model and which is the data profile. Once you've determined your best-fit uplift rate, add text to the plot to display that rate using the `plt.text()` function. Also, you will want to shift the model profile up about 750 m since the channels in the observed profile are at ~750 m elevation.
+4. Lastly, you will want to plot the observed topographic profile along with the model prediction to try and fit the observation by varying the uplift rate until you get a similar profile. Add a line in the script to plot the observed data using the `plt.plot()` function. Be sure to use a different line color or pattern so that it is clear which line is the model and which is the data profile. Once you've determined your best-fit uplift rate, add text to the plot to display that rate using the `plt.text()` function. Also, you will want to shift the model profile up about 750 m since the channels in the observed profile are at ~750 m elevation.
 
 **For Problem 2 you should add the following to the end of this document**
 
