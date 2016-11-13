@@ -1,58 +1,60 @@
-# hillslope_profile_ex2.2.py
-#
-# This script calculates a steady-state profile of a diffusive hillslope with
-# rivers incising at the lateral margins of the hillslope. It also loads a
-# topographic profile for comparison with the model predictions.
-#
-# User-defined variables are listed at the top of the script
-#
-# dwhipp - 06.04.16
+"""
+hillslope_profile_ex2.2.py
 
+This script calculates a steady-state profile of a diffusive hillslope with
+rivers incising at the lateral margins of the hillslope. It also loads a
+topographic profile for comparison with the model predictions.
+
+User-defined variables are listed at the top of the script
+
+@author: XXX - dd.mm.yyyy
+"""
+
+# Import libraries
 import numpy as np
 import matplotlib.pyplot as plt
 
-def main():
-    #--- USER-DEFINED VARIABLES BELOW -----------------------------------------#
+#--- USER-DEFINED VARIABLES BELOW -----------------------------------------#
 
-    L = 10000      # Half-width (ridge to valley) of hillslope [m]
-    U = 0.5        # Hillslope uplift rate [mm/a]
-    kappa = 10.0   # Soil/sediment/rock diffusivity [m^2/a]
+L = 10000      # Half-width (ridge to valley) of hillslope [m]
+U = 0.5        # Hillslope uplift rate [mm/a]
+kappa = 10.0   # Soil/sediment/rock diffusivity [m^2/a]
 
-    #--- END USER-DEFINED VARIABLES -------------------------------------------#
+#--- END USER-DEFINED VARIABLES -------------------------------------------#
 
-    #--- BEGIN HILLSLOPE CALCULATIONS -----------------------------------------#
+#--- BEGIN HILLSLOPE CALCULATIONS -----------------------------------------#
 
-    # Convert erosion rate from mm/a to m/a
-    U = U / 1000.0
+# Convert erosion rate from mm/a to m/a
+U = U / 1000.0
 
-    # Read data file
-    data = np.loadtxt(fname='sierras_profile.txt')
-    data_x =
-    data_h =
+# Read data file
+data = 
 
-    # Define full width of hillslope
-    x =
+# Separate data file into different variables
+data_x =
+data_h =
 
-    # Define empty h-value array
-    h = np.zeros(len(x))
+# Define full width of hillslope
+x =
 
-    # Loop over all x-values and calculate hillslope elevation
-    for
-        h[i] = (U/(2.0*kappa)) * (L**2.0 - x[i]**2.0)
+# Define empty h-value array
+h = np.zeros(len(x))
 
-    # Increase elevation of predicted profile to match observed river elevations
+# Loop over all x-values and calculate hillslope elevation
+for
+    h[i] = (U/(2.0*kappa)) * (L**2.0 - x[i]**2.0)
 
-
-    # Plot results
-    plt.plot(x,h,'k-')
-    plt.xlabel('Distance from divide [m]')
-    plt.ylabel('Elevation [m]')
-    plt.title('Predicted hillslope geometry: Diffusion model')
-
-    # Other calculated values go below here
+# Increase elevation of predicted profile to match observed river elevations
 
 
-    # Display plot
-    plt.show()
+# Plot results
+plt.plot(x,h,'k-')
+plt.xlabel('Distance from divide [m]')
+plt.ylabel('Elevation [m]')
+plt.title('Predicted hillslope geometry: Diffusion model')
 
-main()
+# Other calculated values go below here
+
+
+# Display plot
+plt.show()
