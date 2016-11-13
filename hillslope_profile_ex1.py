@@ -15,9 +15,9 @@ import matplotlib.pyplot as plt
 
 #--- USER-DEFINED VARIABLES BELOW -----------------------------------------#
 
-L = 50.0        # Half-width (ridge to valley) of hillslope [m]
-U = 0.5         # Hillslope uplift rate [mm/a]
-kappa = 0.05    # Soil/sediment/rock diffusivity [m^2/a]
+L = 10.0        # Half-width (ridge to valley) of hillslope [m]
+U = 0.2         # Hillslope uplift rate [mm/a]
+kappa = 0.01    # Soil/sediment/rock diffusivity [m^2/a]
 
 #--- END USER-DEFINED VARIABLES -------------------------------------------#
 
