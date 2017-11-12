@@ -30,14 +30,14 @@ kappa = 0.01    # Soil/sediment/rock diffusivity [m^2/a]
 U = U / 1000.0
 
 # Define range for full width of hillslope
-x = np.linspace()
+x = np.linspace(-L/2, L/2, 21)
 
 # Define empty array to store elevation values (h)
 h = np.zeros(len(x))
 
 # Loop over all values of x and calculate hillslope elevation
-for
-    h[i] = (U/(2.0*kappa)) * (L**2.0 - x[i]**2.0)
+for i in range(len(x)):
+    # INSERT EQUATION HERE
 
 # Plot results
 plt.plot(x, h, 'k-')
@@ -45,7 +45,7 @@ plt.xlabel('Distance from divide [m]')
 plt.ylabel('Elevation [m]')
 plt.title('Predicted hillslope geometry: Diffusion model')
 
-# Other calculated values go below here
+# Other calculated values go below
 
 
 # Display plot
