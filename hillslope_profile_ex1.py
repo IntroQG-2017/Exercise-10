@@ -6,8 +6,10 @@ Description:
     rivers incising at the lateral margins of the hillslope.
     
     User-defined variables are listed at the top of the script
+    
 Usage:
     ./hillslope_profile_ex1.py
+    
 Author:
     XXX YYY - DD.MM.YYYY
 """
