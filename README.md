@@ -39,7 +39,7 @@ Note that you still want to have one-meter increments for the values of *x*.
     Does it seem reasonable?
     Why or why not?**
 
-    :heavy_exclamation_mark: This is a good point to stop and save a copy of your plot with the requested values displayed as text on the plot.
+    :heavy_exclamation_mark: Stop and save a copy of your plot with the requested values displayed as text on the plot.
 
 4. Explore the effect of different parameters on the hillslope geometry.
 Starting with the initial plot you made for point 2 above, make an additional plot for each of the four variations to the following parameters.
