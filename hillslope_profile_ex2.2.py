@@ -38,14 +38,14 @@ data_x =
 data_h = 
 
 # Define full width of hillslope
-x = np.linspace()
+x = np.linspace(-L, L, 201)
 
 # Define empty array to store hillslope elevations (h)
 h = np.zeros(len(x))
 
 # Loop over all x-values and calculate hillslope elevation
-for
-    h[i] = (U/(2.0*kappa)) * (L**2.0 - x[i]**2.0)
+for i in range(len(x)):
+    # INSERT SAME EQUATION AS IN PROBLEM 1 HERE
 
 # Increase elevation of calculated profile to match observed river elevations
 
