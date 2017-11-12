@@ -80,9 +80,9 @@ The data file contains distances from the drainage divide and elevations for the
 For this part of the exercise you will also be using [another broken Python script](hillslope_profile_ex2.2.py) for loading and plotting the profile data and your calculated hillslope profile geometry.
 The profile data should be loaded into arrays `data_x[]` and `data_h[]`, noting that the first column in the data file should be `data_x` and the second should be `data_h`.
 There is no header on this file.
-As in Problem 1, part of this script is not currently working and you will need to add the `for` loop for calculating the hillslope elevations exactly like you did in Problem 1.
-3. Once you have modified the program to add the `for` loop, you will want to change some of the variables that go into the equation for hillslope diffusion.
-You will be exploring a range of landscape uplift rates (`U`), but the values for the other variables should not change.
+As in Problem 1, part of this script is not currently working and you will need to add the equation for calculating the hillslope elevations exactly like you did in Problem 1.
+3. Once you have modified the program to add the missing equation, you will want to change some of the variables that go into the equation for hillslope diffusion.
+You will be exploring a range of landscape uplift rates (`U`), but the values for the other variables will not change when you try different values of `U`.
 Set the diffusion coefficient `kappa` to 1.8 m<sup>2</sup>/a and the half-width of the hillslope `L` should be half of the distance between the channels, which can be measured off the topographic profile in Figure 2 below.
 Your *x*-values should range across the entire interfluve with distance increments of 100 m.
 
@@ -92,6 +92,7 @@ Your *x*-values should range across the entire interfluve with distance incremen
 4. Lastly, you will want to plot the observed topographic profile along with the model prediction to try and fit the observation by varying the uplift rate until you get a similar profile.
 Add a line in the script to plot the observed data using the `plt.plot()` function.
 Be sure to use a different line color or pattern so that it is clear which line is the model and which is the data profile.
+You can add the `label` parameter in the `plt.plot()` functions and a line legend if you like.
 Also, you will want to shift the model profile up about 750 m since the channels in the observed profile are at ~750 m elevation.
 Once you've determined your best-fit uplift rate, add text to the plot to display that rate using the `plt.text()` function.
 
@@ -99,7 +100,7 @@ Once you've determined your best-fit uplift rate, add text to the plot to displa
 
 1. A copy of the plot for Part 1 of Problem 2 with the 4 calculated values displayed on it.
 2. A figure caption as if the figure was in a scientific publication.
-3. A 1 paragraph discussion of the implications the results in Part 1 have for mountain hillslopes. What do the various values you have calculated imply for natural systems?
+3. 2-3 sentences discussing the implications the results in Part 1 have for mountain hillslopes. What do the various values you have calculated imply for natural systems? How long might they take to respond to changes in river erosion rates, for example?
 4. A plot comparing the observed and predicted topographic profiles for Part 2 with the landscape uplift rate displayed as text on the plot.
 5. A figure caption explaining what is plotted as if it were in a scientific publication.
 
