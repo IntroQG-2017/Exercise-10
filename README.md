@@ -1,7 +1,7 @@
 # Exercise 10: Hillslope diffusion
 
 ## Sources
-This tutorial is based on [a MATLAB exercise from Prof. Todd Ehlers (Uni Tübingen)](http://www.geo.uni-tuebingen.de/arbeitsgruppen/mineralogie-geodynamik/geologie-geodynamik/ibm-documentation/matlab-tutorial.html).
+This tutorial is based on [a MATLAB exercise from Prof. Todd Ehlers (Uni Tübingen)](http://www.mnf.uni-tuebingen.de/fachbereiche/geowissenschaften/arbeitsgruppen/mineralogie-geodynamik/forschungsbereich/geologie-geodynamik/workgroup.html).
 
 ## Overview
 The objective of this set of problems is to compute hillslope profiles assuming hillslope evolution is a diffusive process.
