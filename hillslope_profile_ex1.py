@@ -30,7 +30,7 @@ kappa = 0.01    # Soil/sediment/rock diffusivity [m^2/a]
 U = U / 1000.0
 
 # Define range for full width of hillslope
-x = np.linspace(-L/2, L/2, 21)
+x = np.linspace(-L, L, 21)
 
 # Define empty array to store elevation values (h)
 h = np.zeros(len(x))
