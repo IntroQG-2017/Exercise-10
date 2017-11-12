@@ -12,48 +12,49 @@ In this exercise, you will be plotting a diffusive hillslope profile and explori
 Like last time, you are given [a broken Python script](hillslope_profile_ex1.py) that must be modified to complete this problem.
 Your tasks are to:
 
-1. Modify the file to include a `for` loop that calculates the surface elevation of the hillslope (variable `h`) as a function of horizontal distance (variable `x`).
-Your *x*-values should be in one-meter increments and the *x*-value range should be large enough to include one complete interfluve (ridge) from valley to valley.
-The equation for calculating the elevation as a function of horizontal distance (*x*) was presented in lecture and is already in the Python script.
-Your job is to make it calculate the elevation at each *x*-value.
-2. Two channels are located 100 m apart and incise into a landscape being uplifted at a rate of 0.5 mm/a producing an interfluve with two symmetrical hillslopes.
-Calculate the profile of the hillslope system, assuming the erosion is a diffusive process with a diffusion coefficient of 50 × 10<sup>-3</sup> m<sup>2</sup>/a.
-You should do this calculation using the solution for the diffusion equation in the Python script, which is parabolic in form.
+1. Modify the file to add the equation for calculating the elevation of the hillslope *h* as a function of horizontal distance *x*.
+The equation to insert is the last one in the section on [solving the diffusion equation in steady state](https://introqg.github.io/2017/lessons/L10/solving-diffusion.html#finding-integration-constant-2) in the notes on solving the diffusion equation in this week's lesson.
+The `for` loop in the script goes over each index value in *x*, and you want to calculate the surface elevation of the hillslope (variable `h`) at each one of those values.
+The *x*-values are in one-meter increments.
+2. Two channels are located **100 m apart** and incise into a landscape being uplifted at a rate of 0.5 mm/a producing an interfluve with two symmetrical hillslopes.
+Calculate the profile of the hillslope system, assuming erosion is a diffusive process with a diffusion coefficient of 50 × 10<sup>-3</sup> m<sup>2</sup>/a.
+You should do this calculation using the solution for the diffusion equation you just added to the Python script, which is parabolic in form.
+Note that you still want to have one-meter increments for the values of *x*.
 3. Add some calculated values for this hillslope geometry to the plot.
-  - **At what value of *x* (distance from the divide) is the maximum slope?**
-  Add lines of code to the bottom of the Python program to calculate the maximum slope and add it to the plot with the `plt.text()` function.
-  You can find the equation for the slope (*dh*/*dx*) in the [notes on solving the diffusion equation](https://github.com/Intro-Quantitative-Geology/Lesson-10-Natural-diffusion/blob/master/Lesson/Solving-the-diffusion-equation-notes.pdf).
-  **Where is the maximum slope in relation to the crest of the interfluve and the river channel?**
-  - What is the maximum slope angle in degrees?
-  Add this to your plot using the `plt.text()` function below the maximum slope.
-  - What is the maximum relief of the hillslope?
-  The maximum relief is the difference in elevation between the hillcrest and the adjacent valley bottom.
-  Add lines of code to the bottom of the Python script to calculate the maximum relief and display it on the plot with the `plt.text()` function.
-  - Diffusive problems have a characteristic timescale τ.
-  **What does a characteristic timescale mean?**
-  You may want to use [Google](https://www.google.fi) to look up the characteristic timescale of diffusion.
-  Mathematically, the characteristic time scale for diffusion is simply the length scale of the problem squared, divided by the diffusivity.
-  Convert the previous sentence into an equation in Python, and add lines of code to the bottom of the Python script to calculate the characteristic timescale and display this information on your plot using the `plt.text()` function.
-  **What is the value for the characteristic timescale?
-  Does it seem reasonable?
-  Why or why not?**
+    - **At what value of *x* (distance from the divide) is the maximum slope?**
+    Add lines of code to the bottom of the Python program to calculate the maximum slope and add it to the plot with the `plt.text()` function.
+    You can find the equation for the slope (*dh*/*dx*) in the [notes on solving the diffusion equation](https://introqg.github.io/2017/lessons/L10/solving-diffusion.html).
+    **Where is the maximum slope in relation to the crest of the interfluve and the river channel?**
+    - What is the maximum slope angle in degrees?
+    Add this to your plot using the `plt.text()` function below the maximum slope.
+    - What is the maximum relief of the hillslope?
+    The maximum relief is the difference in elevation between the hillcrest and the adjacent valley bottom.
+    Add lines of code to the bottom of the Python script to calculate the maximum relief and display it on the plot with the `plt.text()` function.
+    - Diffusive problems have a characteristic timescale τ.
+    **What does a characteristic timescale mean?**
+    You may want to use [Google](https://www.google.fi) to look up the characteristic timescale of diffusion.
+    Mathematically, the characteristic time scale for diffusion is simply the length scale of the problem squared, divided by the diffusivity.
+    Convert the previous sentence into an equation in Python, and add lines of code to the bottom of the Python script to calculate the characteristic timescale and display this information on your plot using the `plt.text()` function.
+    **What is the value for the characteristic timescale?
+    Does it seem reasonable?
+    Why or why not?**
 
     :heavy_exclamation_mark: This is a good point to stop and save a copy of your plot with the requested values displayed as text on the plot.
 
 4. Explore the effect of different parameters on the hillslope geometry.
 Starting with the initial plot you made for point 2 above, make an additional plot for each of the four variations to the following parameters.
 In each case be sure you only vary a single parameter from the original values in question 2.
-  - Change `L` to 100 m
-  - Double the uplift rate
-  - Double the diffusivity
-  - Reduce the diffusivity by half
+    - Change `L` to 100 m
+    - Double the uplift rate
+    - Double the diffusivity
+    - Reduce the diffusivity by half
 
 **For points 2-4 of this exercise, you should modify the end of this document to include**
 
-1. One plot with the values from point 3 displayed as text on the plot.
-2. One plot for **each** of the four modifications in point 4.
+1. One plot with the values from point 3 of this question displayed as text on the plot.
+2. One plot for **each** of the four modifications in point 4 of this question.
 3. A figure caption beneath **each** plot explaining what it shows as if it was in a scientific publication.
-4. Answers to the questions in bold for point 3 beneath the plots and captions.
+4. Answers to the questions in bold for point 3 of this questions beneath the plots and captions.
 
 **You should also save a copy of your modified code in your GitHub repository**.
 
